@@ -1,0 +1,39 @@
+<!-- <h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+<div class="container">
+  <button class="btn btn-dark mb-3 mr-1" (click)="activo='primero'">Primero</button>
+  <button class="btn btn-danger mb-3" (click)="activo='segundo'">Segundo</button>
+  
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div> -->
+
+<h1 class="bg-dark text-white py-5">Head</h1>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand " [routerLink]="['/']">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/']">Inicio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/rutas']">Link</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contacto']">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
